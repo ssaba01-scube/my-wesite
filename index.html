@@ -6,80 +6,93 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
             color: #333;
         }
+        /* Hero Banner with Background Image Effect */
         header {
-            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            background: linear-gradient(rgba(13, 71, 161, 0.85), rgba(25, 118, 210, 0.85)), 
+                        url('https://images.unsplash.com/photo-1541888946425-d0fbb18f8f3c?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 40px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
         header h1 {
-            margin: 0 0 10px 0;
-            font-size: 32px;
+            margin: 0 0 15px 0;
+            font-size: 38px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         header p {
             margin: 0;
-            font-size: 18px;
+            font-size: 20px;
             color: #e3f2fd;
         }
         .container {
-            max-width: 900px;
-            margin: 30px auto;
+            max-width: 950px;
+            margin: -30px auto 30px auto;
             padding: 0 20px;
+            position: relative;
         }
         .card {
             background-color: white;
-            padding: 30px;
+            padding: 35px;
             margin-bottom: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
         }
         h2 {
             color: #0d47a1;
-            border-bottom: 2px solid #e3f2fd;
-            padding-bottom: 8px;
+            border-bottom: 3px solid #e3f2fd;
+            padding-bottom: 10px;
             margin-top: 0;
+            font-size: 24px;
         }
         p, li {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #555;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #444;
         }
         .services-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 20px;
             list-style: none;
             padding: 0;
+            margin-top: 20px;
         }
         .services-grid li {
-            background: #f1f8ff;
-            padding: 12px 15px;
-            border-radius: 6px;
-            border-left: 4px solid #1976d2;
+            background: #f8fbff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 5px solid #1976d2;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            font-weight: 500;
         }
         .contact-box p {
-            margin: 8px 0;
-            font-size: 17px;
+            margin: 10px 0;
+            font-size: 18px;
         }
         .contact-box strong {
-            color: #222;
+            color: #1976d2;
         }
         .footer {
-            background-color: #263238;
+            background-color: #1a237e;
             color: white;
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
+            padding: 25px;
+            font-size: 15px;
             margin-top: 50px;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             .services-grid {
                 grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 28px;
             }
         }
     </style>
@@ -95,7 +108,7 @@
         
         <!-- About Us Section -->
         <div class="card">
-            <h2>நிறுவத்தைப் பற்றி (About Us)</h2>
+            <h2>நிறுவனத்தைப் பற்றி (About Us)</h2>
             <p>எங்களது <strong>S Cube Infrastructure Developers</strong> நிறுவனம், தமிழ்நாட்டில் தொழில்நுட்பச் சிறப்போடும் வாடிக்கையாளர்களின் நம்பிக்கையோடும் வெற்றிகரமாகச் செயல்பட்டு வருகிறது. 2018 முதல் பிரீமியம் கட்டுமானம், நவீன உள்வடிவமைப்பு (Interior Designs), மற்றும் சீரமைப்புப் பணிகளில் சிறந்து விளங்குகிறோம். வாடிக்கையாளர்களின் கனவுகளை நனவாக்குவதே எங்கள் லட்சியம்.</p>
         </div>
 
