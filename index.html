@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S Cube Infrastructure Developers - Chennai</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
+            background-color: #f4f6f9;
             margin: 0;
             padding: 0;
             color: #333;
         }
-        /* Hero Banner with Background Image Effect */
+        /* Header / Hero Section */
         header {
             background: linear-gradient(rgba(13, 71, 161, 0.85), rgba(25, 118, 210, 0.85)), 
                         url('https://images.unsplash.com/photo-1541888946425-d0fbb18f8f3c?auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 80px 20px;
+            padding: 90px 20px;
             text-align: center;
         }
         header h1 {
-            margin: 0 0 15px 0;
-            font-size: 38px;
+            margin: 0 0 10px 0;
+            font-size: 40px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         header p {
@@ -32,7 +33,7 @@
             color: #e3f2fd;
         }
         .container {
-            max-width: 950px;
+            max-width: 1000px;
             margin: -30px auto 30px auto;
             padding: 0 20px;
             position: relative;
@@ -40,22 +41,23 @@
         .card {
             background-color: white;
             padding: 35px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
         }
         h2 {
             color: #0d47a1;
             border-bottom: 3px solid #e3f2fd;
             padding-bottom: 10px;
             margin-top: 0;
-            font-size: 24px;
+            font-size: 26px;
         }
         p, li {
             font-size: 17px;
             line-height: 1.8;
-            color: #444;
+            color: #555;
         }
+        /* Services Grid */
         .services-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -70,15 +72,50 @@
             border-radius: 8px;
             border-left: 5px solid #1976d2;
             box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-            font-weight: 500;
+            font-weight: 600;
+            color: #222;
         }
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background: #eee;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-caption {
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            background: #fff;
+            color: #0d47a1;
+        }
+        /* Contact Box */
         .contact-box p {
-            margin: 10px 0;
+            margin: 12px 0;
             font-size: 18px;
         }
         .contact-box strong {
-            color: #1976d2;
+            color: #0d47a1;
         }
+        /* Footer */
         .footer {
             background-color: #1a237e;
             color: white;
@@ -88,7 +125,7 @@
             margin-top: 50px;
         }
         @media (max-width: 768px) {
-            .services-grid {
+            .services-grid, .gallery-grid {
                 grid-template-columns: 1fr;
             }
             header h1 {
@@ -101,42 +138,75 @@
 
     <header>
         <h1>S Cube Infrastructure Developers</h1>
-        <p>நவீன தொழில்நுட்பம் மற்றும் தரமான கட்டுமானத் தீர்வுகள் - சென்னை</p>
+        <p>Excellence in Construction & Modern Interior Solutions | Chennai</p>
     </header>
 
     <div class="container">
         
         <!-- About Us Section -->
         <div class="card">
-            <h2>நிறுவனத்தைப் பற்றி (About Us)</h2>
-            <p>எங்களது <strong>S Cube Infrastructure Developers</strong> நிறுவனம், தமிழ்நாட்டில் தொழில்நுட்பச் சிறப்போடும் வாடிக்கையாளர்களின் நம்பிக்கையோடும் வெற்றிகரமாகச் செயல்பட்டு வருகிறது. 2018 முதல் பிரீமியம் கட்டுமானம், நவீன உள்வடிவமைப்பு (Interior Designs), மற்றும் சீரமைப்புப் பணிகளில் சிறந்து விளங்குகிறோம். வாடிக்கையாளர்களின் கனவுகளை நனவாக்குவதே எங்கள் லட்சியம்.</p>
+            <h2>About Us</h2>
+            <p>Established in 2018, <strong>S Cube Infrastructure Developers</strong> is a trusted name in the construction and interior design sector across Tamil Nadu. We specialize in delivering premium residential construction, commercial projects, office interiors, and custom modular kitchen solutions with uncompromising quality, modern engineering, and timely execution.</p>
         </div>
 
         <!-- Services Section -->
         <div class="card">
-            <h2>எங்கள் சேவைகள் (Our Services)</h2>
+            <h2>Our Services</h2>
             <ul class="services-grid">
-                <li>🏢 கட்டடக் கட்டுமானம் & ஒப்பந்தப் பணிகள்</li>
-                <li>🛠️ நவீன உள்வடிவமைப்பு (Interior Designs)</li>
-                <li>🏡 வீடு மற்றும் அலுவலக சீரமைப்புப் பணிகள் (Renovation)</li>
-                <li>🛡️ வெப்பத் தடுப்பு மற்றும் நீர்ப்புகாப்புப் பணிகள் (Waterproofing)</li>
-                <li>🏗️ வணிக வளாகங்கள் & குடியிருப்புத் திட்டங்கள்</li>
-                <li>🧱 உலோகக் கட்டுமானப் பணிகள் (Metal Construction)</li>
+                <li>🏢 Building Construction & Contracting</li>
+                <li>🛋️ Luxury Interior Design & Execution</li>
+                <li>🏛️ Modern Office Interiors</li>
+                <li>🍳 Custom Modular Kitchen Solutions</li>
+                <li>🏡 Renovation & Remodeling Works</li>
+                <li>🛡️ Heat Guard Roof Coating & Waterproofing</li>
             </ul>
+        </div>
+
+        <!-- Photo Gallery Section -->
+        <div class="card">
+            <h2>Our Project Gallery</h2>
+            <p>Take a look at some of our specialized works ranging from structural construction to elegant interiors:</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Construction Work">
+                    <div class="gallery-caption">Building Construction</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Interior Design">
+                    <div class="gallery-caption">Living Room Interiors</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Office Interiors">
+                    <div class="gallery-caption">Office Workspace</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Modular Kitchen">
+                    <div class="gallery-caption">Modular Kitchen</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Residential Villa">
+                    <div class="gallery-caption">Residential Villas</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Modern Decor">
+                    <div class="gallery-caption">Architectural Planning</div>
+                </div>
+            </div>
         </div>
 
         <!-- Contact Section -->
         <div class="card contact-box">
-            <h2>தொடர்புக்கு (Contact Us)</h2>
-            <p><strong>முகவரி:</strong> எண் 10, யுனைடெட் இந்தியா காலனி, கோடம்பாக்கம், சென்னை - 600024</p>
-            <p><strong>தொலைபேசி எண்:</strong> +91 98847 44495</p>
-            <p><strong>நிறுவப்பட்ட ஆண்டு:</strong> 2018</p>
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> No. 10, United India Colony, Kodambakkam, Chennai - 600024</p>
+            <p><strong>Phone:</strong> +91 98847 44495</p>
+            <p><strong>Established:</strong> 2018</p>
+            <p><strong>Email:</strong> contact@scubeinfra.com</p>
         </div>
 
     </div>
 
     <div class="footer">
-        <p>&copy; 2026 S Cube Infrastructure Developers. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+        <p>&copy; 2026 S Cube Infrastructure Developers. All Rights Reserved.</p>
     </div>
 
 </body>
